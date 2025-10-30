@@ -62,6 +62,42 @@ fundPrevBtn?.addEventListener('click', () => {
 fundSlide();
 window.addEventListener('resize', fundSlide);
 
+
+///////////dots js
+// ===== Carousel Dots (1 dot per card) =====
+const fundDotsContainer = document.querySelector('.fund-carousel-dots');
+const fundCards = document.querySelectorAll('.fund-card');
+const totalDots = fundCards.length;
+
+// Create one dot for each card
+fundDotsContainer.innerHTML = Array(totalDots)
+  .fill('<div class="fund-dot"></div>')
+  .join('');
+
+const fundDots = document.querySelectorAll('.fund-dot');
+if (fundDots.length > 0) fundDots[0].classList.add('active');
+
+// Update active dot when slide changes
+function updateDots() {
+  fundDots.forEach(dot => dot.classList.remove('active'));
+  if (fundDots[fundIndex]) fundDots[fundIndex].classList.add('active');
+}
+
+// Add click events to dots
+fundDots.forEach((dot, i) => {
+  dot.addEventListener('click', () => {
+    fundIndex = i;
+    fundSlide();
+    updateDots();
+  });
+});
+
+// Update dots when navigating with arrows
+fundNextBtn?.addEventListener('click', updateDots);
+fundPrevBtn?.addEventListener('click', updateDots);
+
+
+
 // footer-section-js 
 
 function setupAccordion() {

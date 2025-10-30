@@ -19,7 +19,7 @@ body {
 }
 
 .navbar {
-    background-color: #EDEDED;
+    background-color: #ECF4E9;
     border-bottom: 1px solid #e2e8f0;
     height: 72px;
     display: flex;
@@ -109,6 +109,7 @@ body {
     color: #000000;
     /* border-color: #d1d5db; */
     /* border-radius: 8px; */
+    background: none;
 }
 
 .btn-login:hover {
@@ -225,226 +226,399 @@ body {
 
 
 /* hero-section-css */
-
-
-:root {
-    --primary-green: #4CAF50;
-    --darker-green: #388E3C;
-    --text-dark: #333;
-    --text-light: #666;
-    --light-bg: #F0F4F7;
-    --pink-circle: #FFD1DC;
-    --card-bg: #FFFFFF;
-    --shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    --border-radius-sm: 8px;
+.donor-hero-section {
+    padding: 80px 223px 4px 222px;
+    text-align: center;
+    background-color: #ECF4E9;
+    font-family: 'Inter', sans-serif;
+    color: #ECF4E9;
+    /* border: 1px solid black; */
 }
 
-/* ✅ Section Wrapper - replaces body styling */
-.nonprofit-wrapper {
-    /* font-family: 'Arial', sans-serif; */
-    /* background-color: var(--light-bg); */
-    background-color: #fff;
+.donor-container {
+    max-width: 995px;
+    margin: 0 auto;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    /* border: 1px solid black; */
+}
+
+/* --- TEXT SECTION --- */
+.donor-hero-content {
+    text-align: center;
+    max-width: 760px;
+    /* border: 1px solid black; */
+}
+
+.donor-hero-content h1 {
+    font-family: 'CircularStd';
+    font-size: 64px;
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 66px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    /* border: 1px solid black;  */
+}
+
+
+.donor-hero-content p {
+    font-family: 'Cabin';
+    font-size: 18px;
+    line-height: 27px;
+    color:#000000;
+    margin-bottom: 30px;
+    /* border: 1px solid black; */
+    padding: 0 63px 0 63px;
+}
+
+.donor-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid black;   */
+}
+
+.donor-btn {
+    padding: 12px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.donor-btn:active {
+    transform: translateY(1px);
+}
+
+.donor-btn-primary {
+    background-color: #3F8F24;
+    color: white;
+    /* border: 2px solid #5cb85c; */
+}
+
+.donor-btn-primary:hover {
+    background-color: #4cae4c;
+}
+
+.donor-btn-secondary {
+    /* background-color: transparent; */
+    color: #000;
+    /* border: 2px solid #5cb85c; */
+}
+
+.donor-btn-secondary:hover {
+    background-color: #e6f5e6;
+}
+
+/* --- IMAGE SECTION --- */
+.donor-hero-image-wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 30px;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
-}
-
-.hero-section {
     width: 100%;
-    max-width: 1200px;
-    text-align: center;
-    /* border: 1px solid black; */
-}
-
-/* ------------------ HEADER ------------------ */
-.header-container {
-    max-width: 760px;
-    margin: 0 auto 60px auto;
-    padding: 0 15px;
-    /* border: 1px solid black; */
-}
-
-.header-container h1 {
-    font-size: 3.2em;
-    color: var(--text-dark);
-    line-height: 1.2;
-    margin-bottom: 20px;
-    font-family: 'CircularStd';
-}
-
-.header-container p {
-    font-size: 1.1em;
-    color: var(--text-light);
-    margin-bottom: 30px;
-}
-
-.buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 12px 32px;
-    border: none;
-    border-radius: 999px;
-    font-size: 1.1em;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-}
-
-.btn.primary {
-    background-color: #3F8F24;
-    color: white;
-    font-weight: bold;
-}
-
-.btn.primary:hover {
-    background-color: var(--darker-green);
-}
-
-.btn.secondary {
-    background-color: transparent;
-    /* color: var(--primary-green); */
-    /* border: 2px solid var(--primary-green); */
-    font-weight: bold;
-    box-shadow: none;
-}
-
-.btn.secondary:hover {
-    background-color: var(--primary-green);
-    color: white;
-}
-
-/* ------------------ MAIN CONTENT ------------------ */
-.main-content-container {
     max-width: 995px;
-    margin: 0 auto;
-    position: relative;
-    padding: 40px 0;
-    min-height: 550px;
+    /* padding: 30px 0; */
+    /* border: 1px solid black; */
 }
 
-.main-content-container img {
+.donor-hero-image {
     width: 100%;
     height: auto;
-    object-fit: contain;
     display: block;
-    margin: 0 auto;
+    object-fit: contain;
 }
 
-/* ------------------ MEDIA QUERIES ------------------ */
-@media (max-width: 1200px) {
-    .header-container h1 {
-        font-size: 2.8em;
-    }
-
-    .header-container p {
-        font-size: 1.05em;
-    }
-
-    .main-content-container {
-        padding: 35px 0;
-    }
+/* Floating Cards */
+.donor-floating-card {
+    position: absolute;
+    background-color: #FFFFFF;
+    padding: 15px 10px;
+    border-radius: 10px;
+    /* box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); */
+    transition: transform 0.3s ease;
 }
 
+.donor-floating-card:hover {
+    transform: scale(1.05);
+}
+
+.donor-raised-this-week {
+    top: 30%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border: 1px solid black; */
+    padding: 18px 82px 9px 16px;
+}
+
+.donor-raised-this-week span:first-child {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    line-height: 14.4px;
+    font-family: 'DM Sans';
+    margin-bottom: 8px;
+}
+
+.donor-amount {
+    font-family: 'CircularStd';
+    font-size: 32px;
+    font-weight: 500;
+    color: #409DDD;
+    line-height: 32px;
+}
+
+.donor-record-updated {
+    /* border: 1px solid black; */
+    bottom: 15%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #000000;
+    font-family: 'DM Sans';
+    font-size: 16px;
+    line-height: 14.4px;
+    font-weight: 500;
+}
+
+.donor-check-icon {
+    /* background-color: #5cb85c; */
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+/* ---------------------------- */
+/* ✅ RESPONSIVENESS (Smooth)   */
+/* ---------------------------- */
+
+/* 🎯 Add transition to key elements for smooth resizing */
+.donor-hero-section,
+.donor-hero-content h1,
+.donor-hero-content p,
+.donor-btn,
+.donor-hero-image,
+.donor-floating-card,
+.donor-record-updated,
+.donor-raised-this-week,
+.donor-amount,
+.donor-check-icon {
+    transition: all 0.35s ease-in-out;
+}
+
+/* 📱 Large tablets & small laptops (≤1024px) */
 @media (max-width: 1024px) {
-    .header-container h1 {
-        font-size: 2.4em;
+    .donor-hero-section {
+        padding: 60px 120px;
     }
 
-    .header-container p {
-        font-size: 1em;
+    .donor-hero-content h1 {
+        font-size: 54px;
+        line-height: 60px;
     }
 
-    .btn {
-        font-size: 1em;
-        padding: 12px 25px;
+    .donor-hero-content p {
+        font-size: 17px;
+        padding: 0 40px;
     }
 
-    .main-content-container img {
-        max-width: 90%;
+    /* 🟢 Adjust floating cards and fonts */
+    .donor-raised-this-week {
+        top: 28%;
+        right: 4%;
+        padding: 12px 40px 8px 12px;
+    }
+
+    .donor-raised-this-week span:first-child {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .donor-amount {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .donor-record-updated {
+        font-size: 12px;
+        gap: 8px;
+        bottom: 13%;
+    }
+
+    .donor-check-icon {
+        width: 16px;
+        height: 16px;
+        font-size: 0.7em;
     }
 }
 
+/* 📱 Tablets (≤768px) */
 @media (max-width: 768px) {
-    .header-container {
-        margin-bottom: 40px;
+    .donor-hero-section {
+        padding: 60px 60px;
     }
 
-    .header-container h1 {
-        font-size: 2em;
+    .donor-container {
+        gap: 32px;
     }
 
-    .header-container p {
-        font-size: 0.95em;
+    .donor-hero-content h1 {
+        font-size: 40px;
+        line-height: 52px;
     }
 
-    .buttons {
-        flex-direction: column;
-        gap: 15px;
+    .donor-hero-content p {
+        font-size: 16px;
+        padding: 0 25px;
     }
 
-    .btn {
-        width: 80%;
-        max-width: 300px;
-        margin: 0 auto;
+    .donor-btn {
+        font-size: 15px;
+        padding: 10px 26px;
     }
 
-    .main-content-container {
-        padding: 30px 0;
-        min-height: auto;
+    .donor-hero-image-wrapper {
+        max-width: 700px;
     }
 
-    .main-content-container img {
-        width: 80%;
-    }
-}
-
-@media (max-width: 520px) {
-    .header-container h1 {
-        font-size: 1.7em;
+    .donor-raised-this-week {
+        top: 28%;
+        right: 0%;
+        padding: 12px 40px 8px 12px;
     }
 
-    .header-container p {
-        font-size: 0.9em;
+    .donor-amount {
+        font-size: 24px;
     }
 
-    .btn {
-        font-size: 0.9em;
-        padding: 10px 22px;
-    }
-
-    .main-content-container img {
-        width: 100%;
+    .donor-record-updated {
+        font-size: 8px;
+        bottom: 10%;
     }
 }
 
-@media (max-width: 400px) {
-    .nonprofit-wrapper {
-        padding: 10px;
+/* 📱 Small tablets / large phones (≤640px) */
+@media (max-width: 640px) {
+    .donor-hero-section {
+        padding: 50px 40px;
     }
 
-    .header-container h1 {
-        font-size: 1.5em;
+    .donor-hero-content h1 {
+        font-size: 34px;
+        line-height: 42px;
     }
 
-    .header-container p {
-        font-size: 0.85em;
+    .donor-hero-content p {
+        font-size: 15px;
+        line-height: 22px;
+        padding: 0 20px;
     }
 
-    .btn {
-        font-size: 0.85em;
-        padding: 8px 18px;
+    .donor-btn {
+        font-size: 14px;
+        padding: 8px 22px;
     }
 
-    .main-content-container img {
-        width: 100%;
+    .donor-hero-image-wrapper {
+        max-width: 500px;
+    }
+
+    .donor-floating-card {
+        padding: 10px 12px;
+    }
+
+    .donor-raised-this-week {
+        top: 28%;
+        right: 0%;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .donor-raised-this-week span:first-child {
+        font-size: 9px;
+        line-height: 10px;
+    }
+
+    .donor-amount {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .donor-record-updated {
+        font-size: 9px;
+        gap: 8px;
+        bottom: 13%;
+    }
+
+    .donor-check-icon img {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+/* 📱 Phones (≤480px) */
+@media (max-width: 480px) {
+    .donor-hero-section {
+        padding: 40px 20px;
+    }
+
+    .donor-hero-content h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .donor-hero-content p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0 10px;
+    }
+
+    .donor-btn {
+        font-size: 13px;
+        padding: 8px 20px;
+    }
+
+    .donor-hero-image-wrapper {
+        max-width: 350px;
+    }
+
+    .donor-raised-this-week {
+        top: 22%;
+        right: 0%;
+        padding: 8px 24px 6px 8px;
+    }
+
+    .donor-amount {
+        font-size: 18px;
+    }
+
+    .donor-record-updated {
+        font-size: 9px;
+        bottom: 6%;
+        left: 2%;
+    }
+
+    .donor-check-icon {
+        width: 16px;
+        height: 16px;
+        font-size: 0.7em;
     }
 }
 
@@ -472,6 +646,7 @@ body {
     /* moved here */
 
 }
+
 
 @media (min-width: 1024px) {
     .section-wrapper {
@@ -535,7 +710,7 @@ body {
     /* border: 1px solid red; */
     background-color: #ECF4E9;
     border-radius: 12px;
-    padding: 24px;
+    padding: 32px 37px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -554,16 +729,24 @@ body {
             0 4px 6px -2px rgba(0, 0, 0, 0.05);
         cursor: pointer;
     }
+    .section-wrapper {
+    padding: 60px 40px; /* reduced top-bottom and side padding */
+  }
+
+  .section-title {
+    font-size: 2.5rem; /* slightly smaller heading for tablet */
+    margin-bottom: 40px;
+  }
 }
 
 .card-icon-wrapper {
     /* border: 1px solid blue; */
-    padding: 12px;
-    margin-bottom: 16px;
+    /* padding: 12px; */
+    /* margin-bottom: 16px; */
     /* border-radius: 9999px; */
     /* border: 2px dashed #9ca3af; */
-    min-width: 56px;
-    min-height: 56px;
+    /* min-width: 56px; */
+    /* min-height: 56px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -577,9 +760,9 @@ body {
 
 .card-text {
     /* border: 1px solid green; */
-    padding: 16px;
+    /* padding: 16px; */
     font-size: 0.875rem;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
     line-height: 24px;
     color: #000000;
     font-weight: 400;
@@ -598,6 +781,7 @@ body {
     color: #059669;
 }
 
+
 /* -----------into-section-css ------- */
 .section-container {
     /* background-color: pink; */
@@ -605,6 +789,88 @@ body {
     margin: 0 auto;
     color: #ECF4E969;
 }
+/* ========== Responsive heading for section-title ========== */
+
+/* Large desktops (already handled) — 3.75rem stays */
+
+/* Tablets and smaller laptops */
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 40px;
+  }
+   .section-wrapper {
+    padding: 40px 30px; /* reduce top-bottom and horizontal padding */
+  }
+
+  .section-title {
+    font-size: 3rem; /* slightly smaller for tablets */
+    margin-bottom: 35px;
+  }
+}
+
+/* Large mobile devices */
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 2rem;
+    line-height: 1.25;
+    margin-bottom: 32px;
+    padding: 0 20px; /* Adds some breathing room from screen edges */
+  }
+  .section-wrapper {
+    padding: 40px 20px; /* compact padding for mobile */
+  }
+
+  .section-title {
+    font-size: 1.8rem; /* smaller heading for mobile */
+    margin-bottom: 28px; /* tighter space below heading */
+    line-height: 1.3;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 520px) {
+  .section-title {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    margin-bottom: 28px;
+    padding: 0 15px;
+  }
+  .section-wrapper {
+    padding: 32px 16px; /* reduce side space for small devices */
+  }
+
+  .section-title {
+    font-size: 1.5rem; /* smaller text to fit narrow screens */
+    margin-bottom: 24px; /* adjust spacing below title */
+    line-height: 1.3;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 400px) {
+  .section-title {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 24px;
+    padding: 0 12px;
+  }
+}
+
+/* ========== Responsive Padding for Small Devices ========== */
+@media (max-width: 375px) {
+  .section-wrapper {
+    padding: 40px 16px; /* top-bottom: 40px, left-right: 16px */
+  }
+
+  .section-title {
+    font-size: 1.5rem; /* Slightly smaller title for better fit */
+    margin-bottom: 32px;
+  }
+}
+
+
 
 /* --- INTRO SECTION --- */
 .intro-section {
@@ -830,8 +1096,7 @@ body {
 
 /*--------- icons-section-css ------- */
 .io {
-    padding: 80px 0;
-    /* border: 1px solid black */
+    padding: 0 0 80px 0;
 }
 
 /* ---------------- Main Section ---------------- */
@@ -982,7 +1247,7 @@ body {
 /* --- Tablet Portrait (max-width: 768px) --- */
 @media (max-width: 768px) {
     .trust-section {
-        padding: 50px 16px;
+        /* padding: 50px 16px; */
         gap: 40px;
     }
 
@@ -1016,7 +1281,7 @@ body {
 @media (max-width: 576px) {
     .trust-section {
         gap: 32px;
-        padding: 40px 12px;
+        /* padding: 40px 12px; */
     }
 
     .trust-content h2 {
@@ -1113,7 +1378,7 @@ body {
     max-width: 1440px;
     height: 672px;
     margin: 0 auto;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* border: 1px solid black; */
 }
 
@@ -1234,52 +1499,137 @@ body {
 
 .fund-card span {
     font-size: 13px;
-    color: #555;
+    color: #000;
 }
+/* ===== Carousel Dots ===== */
+.fund-carousel-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 56%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.fund-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.fund-dot.active {
+  background-color: #000;
+  transform: scale(1.1);
+}
+
+.fund-card p {
+  margin-bottom: 91px;
+}
+
+.fund-card img{
+    margin-bottom: 12px;
+}
+
+
 
 
 /* ===== Responsive Breakpoints ===== */
-@media (max-width: 1200px) {
-    .fundraising-section {
-        height: auto;
-        padding: 80px 0;
-    }
-
-    .fundraising-heading {
-        position: static;
-        width: auto;
-        margin: 0 0 40px 100px;
-    }
-
-    .fundraising-heading h1 {
-        font-size: 42px;
-        line-height: 50px;
-    }
-
-    .fund-carousel-container {
-        position: static;
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .fund-carousel-track {
-        gap: 40px;
-    }
-
-    .fund-card {
-        flex: 0 0 270px;
-        height: auto;
-    }
+/* 🖥️ Large screens (1200px–1440px) */
+@media (max-width: 1440px) {
+    .fundraising-container { padding: 0 40px; }
+    .fundraising-heading { left: 80px; top: 230px; }
+    .fundraising-heading h1 { font-size: 44px; line-height: 52px; }
+    .fund-carousel-container { left: 650px; width: 650px; }
+    .fund-carousel-track { gap: 44px; }
 }
 
-@media (max-width: 992px) {
+/* 💻 Tablets (992px–1199px) */
+@media (max-width: 1199px) {
+    .fundraising-section, .fundraising-container { padding-bottom: 80px; }
+    .fundraising-heading { top: 180px; left: 60px; width: 450px; }
+    .fundraising-heading h1 { font-size: 40px; line-height: 48px; }
+    .fund-carousel-nav { top: 70px; left: 580px; gap: 16px; }
+    .fund-carousel-container { top: 120px; left: 580px; width: 550px; }
+    .fund-card { flex: 0 0 250px; padding: 25px; height: 380px; }
+    .fund-card p { font-size: 15px; line-height: 22px; }
+    .decor-left, .decor-right { width: 180px; height: 140px; }
+    
+}
+
+/* 📱 Tablets (768px–991px) */
+@media (max-width: 991px) {
+    .fundraising-container { display: flex; flex-direction: column; align-items: center; text-align: center; height: auto; }
+    .fundraising-heading { position: static; width: 80%; margin-top: 40px; }
+    .fundraising-heading h1 { font-size: 36px; line-height: 44px; letter-spacing: -2px; }
+    .fund-carousel-nav { position: static; justify-content: center; margin: 20px 0; }
+    .fund-carousel-container { position: static; width: 90%; margin: 0 auto; }
+    .fund-carousel-track { gap: 32px; }
+    .fund-card { flex: 0 0 80%; height: auto; padding: 24px; }
+    .fund-card p { font-size: 15px; line-height: 22px; }
+    .decor-left, .decor-right {display: none;}
+    .fund-carousel-dots {
+        bottom: 25px;
+        gap: 8px;
+        left: unset;
+        transform: translateX(-10%);
+    }
+    
+}
+
+/* 📲 Mobile (521px–767px) */
+@media (max-width: 767px) {
+    .fundraising-section { height: auto; padding: 60px 0; }
+    .fundraising-heading { width: 90%; margin-top: 0px; }
+    .fundraising-heading h1 { font-size: 30px; line-height: 38px; letter-spacing: -1px; }
+    .fund-carousel-container { width: 100%; }
+    .fund-carousel-track { gap: 24px; }
+    .fund-card { flex: 0 0 90%; padding: 20px; height: auto; }
+    .fund-card p { font-size: 14px; line-height: 20px; }
+    .fund-card h4 { font-size: 13px; }
+    .fund-card span { font-size: 12px; }
+    .decor-left, .decor-right { width: 120px; height: 90px; opacity: 0.6; }
+}
+
+/* 📱 Small Mobile (<=520px) */
+@media (max-width: 520px) {
+    .fundraising-section { padding: 40px 0; }
+    .fundraising-heading h1 { font-size: 26px; line-height: 32px; }
+    .fund-card { flex: 0 0 95%; padding: 18px; }
+    .fund-card p { font-size: 13px; line-height: 18px; }
+    .fund-person-img { width: 40px; height: 40px; }
+    .decor-left, .decor-right { width: 100px; height: 70px; opacity: 0.4; }
+    .fund-carousel-dots {
+        bottom: 25px;
+        gap: 8px;
+        left: unset;
+        transform: translateX(-10%);
+    }
+}
+/* 📱 Extra Small Devices (below 520px — e.g., 400px and below) */
+@media (max-width: 400px) {
+    .fundraising-section {
+        padding: 30px 0;
+        height: auto;
+    }
+
     .fundraising-heading {
-        margin-left: 60px;
+        width: 90%;
+        margin: 0 auto 20px auto;
+        text-align: center;
+        padding: 0;
     }
 
     .fundraising-heading h1 {
-        font-size: 36px;
-        line-height: 44px;
+        font-size: 22px;
+        line-height: 28px;
+        letter-spacing: -0.5px;
     }
 
     .fund-carousel-container {
@@ -1288,79 +1638,188 @@ body {
     }
 
     .fund-carousel-track {
-        gap: 30px;
-    }
-
-    .fund-card {
-        flex: 0 0 calc(50% - 30px);
-        height: auto;
-    }
-
-    .fund-card p {
-        font-size: 15px;
-        line-height: 22px;
-    }
-
-    .fund-person-img {
-        width: 42px;
-        height: 42px;
-    }
-
-    .fund-carousel-nav {
-        top: 60px;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
-@media (max-width: 768px) {
-    .fundraising-heading {
-        margin-left: 40px;
-        /* border: 1ps solid red; */
-    }
-
-    .fundraising-heading h1 {
-        font-size: 30px;
-        line-height: 38px;
-        letter-spacing:-1px;
-    }
-
-    .fund-carousel-track {
-        gap: 20px;
-    }
-
-    .fund-card {
-        flex: 0 0 100%;
-    }
-}
-
-@media (max-width: 576px) {
-    .fundraising-heading {
-        margin-left: 20px;
-    }
-
-    .fundraising-heading h1 {
-        font-size: 24px;
-        line-height: 32px;
-    }
-
-    .fund-carousel-track {
         gap: 16px;
     }
 
     .fund-card {
-        flex: 0 0 100%;
-        padding: 20px;
+        flex: 0 0 92%;
+        padding: 15px;
+        height: auto;
+        border-radius: 6px;
     }
 
     .fund-card p {
-        font-size: 14px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .fund-card h4 {
+        font-size: 12px;
+    }
+
+    .fund-card span {
+        font-size: 11px;
     }
 
     .fund-person-img {
         width: 36px;
         height: 36px;
+        margin-bottom: 8px;
+    }
+
+    .decor-left,
+    .decor-right {
+        width: 80px;
+        height: 60px;
+        opacity: 0.3;
+    }
+
+    .fund-carousel-dots {
+        bottom: 25px;
+        gap: 8px;
+        left: unset;
+        transform: translateX(-10%);
+    }
+
+    .fund-dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+/* 💻 Tablets (992px–1199px) */
+@media (max-width: 1199px) {
+    .fund-carousel-track {
+        gap: 40px;
+    }
+
+    .fund-card {
+        flex: 0 0 240px;
+        height: auto;
+        padding: 22px;
+        margin: 0;
+    }
+
+    .fund-card p {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 60px;
+    }
+
+    .fund-person-img {
+        margin-bottom: 10px;
+    }
+}
+
+/* 📱 Tablets (768px–991px) */
+@media (max-width: 991px) {
+    .fund-carousel-track {
+        gap: 24px;
+    }
+
+    .fund-card {
+        flex: 0 0 75%;
+        padding: 20px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .fund-card p {
+        font-size: 15px;
+        line-height: 21px;
+        margin-bottom: 40px;
+    }
+
+    .fund-card h4 {
+        font-size: 14px;
+    }
+
+    .fund-card span {
+        font-size: 12px;
+    }
+}
+
+/* 📲 Mobile (521px–767px) */
+@media (max-width: 767px) {
+    .fund-carousel-track {
+        gap: 20px;
+    }
+
+    .fund-card {
+        flex: 0 0 85%;
+        padding: 18px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .fund-card p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .fund-card h4 {
+        font-size: 13px;
+    }
+
+    .fund-card span {
+        font-size: 12px;
+    }
+}
+
+/* 📱 Small Mobile (<=520px) */
+@media (max-width: 520px) {
+    .fund-carousel-track {
+        gap: 16px;
+    }
+
+    .fund-card {
+        flex: 0 0 90%;
+        padding: 16px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .fund-card p {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 25px;
+    }
+
+    .fund-card h4 {
+        font-size: 12.5px;
+    }
+
+    .fund-card span {
+        font-size: 11.5px;
+    }
+}
+
+/* 📱 Extra Small (below 400px) */
+@media (max-width: 400px) {
+    .fund-carousel-track {
+        gap: 12px;
+    }
+
+    .fund-card {
+        flex: 0 0 92%;
+        padding: 14px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    .fund-card p {
+        font-size: 12px;
+        line-height: 17px;
+        margin-bottom: 20px;
+    }
+
+    .fund-card h4 {
+        font-size: 12px;
+    }
+
+    .fund-card span {
+        font-size: 11px;
     }
 }
 
