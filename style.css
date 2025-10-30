@@ -428,6 +428,7 @@ body {
 @media (max-width: 1024px) {
     .donor-hero-section {
         padding: 60px 120px;
+        padding-bottom: 0;
     }
 
     .donor-hero-content h1 {
@@ -474,6 +475,7 @@ body {
 @media (max-width: 768px) {
     .donor-hero-section {
         padding: 60px 60px;
+        padding-bottom: 0;
     }
 
     .donor-container {
@@ -519,6 +521,7 @@ body {
 @media (max-width: 640px) {
     .donor-hero-section {
         padding: 50px 40px;
+        padding-bottom: 0;
     }
 
     .donor-hero-content h1 {
@@ -577,6 +580,7 @@ body {
 @media (max-width: 480px) {
     .donor-hero-section {
         padding: 40px 20px;
+        padding-bottom: 0;
     }
 
     .donor-hero-content h1 {
