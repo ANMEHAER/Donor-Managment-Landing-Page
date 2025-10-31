@@ -1529,7 +1529,7 @@ body {
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
-  z-index: 1000;
+  z-index: 1;
   justify-content: center;
   align-items: center;
 }
@@ -1844,6 +1844,9 @@ body {
 }
 
 
+
+
+
 /* footer-css */
 /* --- Main Footer Styling --- */
 .footer-section {
@@ -2105,5 +2108,16 @@ body {
     .link-list li {
         text-align: left;
         /* Ensure list items revert to left alignment */
+    }
+}
+/* --- Extra padding for footer columns (768px to 300px) --- */
+@media (max-width: 768px) and (min-width: 300px) {
+    .footer-section .follow-us,
+    .footer-section .links-group-1,
+    .footer-section .links-group-2,
+    .footer-section .links-group-3 {
+        padding: 15px;
+        background-color: #ffffff;
+        border-radius: 8px; /* optional – gives a softer card feel */
     }
 }
