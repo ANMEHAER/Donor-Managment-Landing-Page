@@ -18,6 +18,7 @@ body {
     background-color: #fff;
 }
 
+/* nav-bar-css  */
 .navbar {
     background-color: #ECF4E9;
     border-bottom: 1px solid #e2e8f0;
@@ -102,6 +103,7 @@ body {
     transition: all 0.2s;
     /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); */
     box-shadow: none;
+    /* border: 1px solid black; */
 }
 
 .btn-login {
@@ -119,8 +121,10 @@ body {
 .btn-demo {
     background-color: #3F8F24;
     color: #fff;
-    border-radius: 9999px;
-    border: none;
+    border-radius: 48px;
+    padding: 8px 25px;
+    /* border: none; */
+    /* border: 1px solid black; */
 }
 
 .btn-demo:hover {
@@ -166,6 +170,18 @@ body {
     z-index: 50;
     flex-direction: column;
     align-items: center;
+}
+
+/* Fix: Ensure mobile menu appears above all sections */
+.mobile-menu {
+    position: fixed; /* Changed from absolute */
+    top: 72px; /* same height as navbar */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+    z-index: 9999; /* Higher than navbar */
 }
 
 .mobile-menu.active {
