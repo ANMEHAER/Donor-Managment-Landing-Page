@@ -1534,6 +1534,8 @@ body {
   align-items: center;
 }
 
+
+
 .fund-dot {
   width: 10px;
   height: 10px;
@@ -1987,6 +1989,16 @@ body {
     opacity: 1;
 }
 
+.new-slick-slider .slick-slide {
+  margin: 0 10px; /* space between slides */
+}
+
+/* fix slick-track alignment when using margins */
+.new-slick-slider .slick-list {
+  margin: 0 -10px;
+}
+
+
 /* --- Mobile Responsiveness (Media Query) --- */
 @media (max-width: 768px) {
     .footer-section {
@@ -2121,3 +2133,50 @@ body {
         border-radius: 8px; /* optional – gives a softer card feel */
     }
 }
+/* --- Fix Footer Mobile Spacing (768px to 300px) --- */
+@media (max-width: 768px) {
+  .footer-columns {
+    gap: 0px; 
+  }
+
+  .col {
+    margin-bottom: 10px; /* tighten vertical spacing between sections */
+    padding-bottom: 0; /* remove extra bottom padding */
+  }
+
+  .footer-section .follow-us,
+  .footer-section .links-group-1,
+  .footer-section .links-group-2,
+  .footer-section .links-group-3 {
+    padding: 10px 12px; /* slightly smaller padding */
+    border-radius: 8px;
+  }
+
+  .col.open .collapsible-content {
+    padding-bottom: 6px; /* less space when opened */
+  }
+
+  .col h4 {
+    margin-bottom: 0;
+  }
+}
+/* --- Footer Divider Lines & Active State --- */
+@media (max-width: 768px) {
+  /* Add divider line under each column */
+  .footer-section .col {
+    border-bottom: 1px solid #e0e0e0;
+    transition: border-color 0.3s ease;
+  }
+
+  /* Remove bottom border for last column */
+  .footer-section .col:last-child {
+    border-bottom: none;
+  }
+
+  /* When a column is open (expanded), hide its divider line */
+  .footer-section .col.open {
+    border-bottom-color: transparent;
+  }
+}
+
+

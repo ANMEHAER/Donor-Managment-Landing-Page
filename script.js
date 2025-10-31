@@ -1,3 +1,34 @@
+// $(".new-slick-slider").slick({
+//   slidesToShow: 2.3, // default for desktop
+//   slidesToScroll: 1,
+//   infinite: true,
+//   autoplay: true,
+//   autoplaySpeed: 2000,
+//   dots: true,
+
+//   // ✅ Place custom arrows BEFORE responsive
+//   prevArrow:
+//     '<button type="button" class="slick-prev"><img src="images/Vector (20).svg" alt="Previous"></button>',
+//   nextArrow:
+//     '<button type="button" class="slick-next"><img src="images/Vector (19).svg" alt="Next"></button>',
+
+//   arrows: true,
+
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: { slidesToShow: 2 },
+//     },
+//     {
+//       breakpoint: 768,
+//       settings: { slidesToShow: 1 },
+//     },
+//   ],
+// });
+
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
@@ -63,12 +94,12 @@ function fundSlide(animate = true) {
   if (!fundCard) return;
 
   const gap = fundGetGap();
-  const fundCardWidth = fundCard.offsetWidth + gap;
+  const fundCardWidth = fundCard.offsetWidth + (gap);
   const totalCards = document.querySelectorAll('.fund-card').length;
   const originalCount = totalCards / 3; // because we tripled (original + 2 clone sets)
 
   fundTrack.style.transition = animate ? 'transform 0.5s ease' : 'none';
-  fundTrack.style.transform = `translateX(-${fundIndex * fundCardWidth}px)`;
+  // fundTrack.style.transform = `translateX(-${fundIndex * fundCardWidth}px)`;
 
   // Calculate actual visible index (0-based for dots)
   const actualIndex = ((fundIndex % originalCount) + originalCount) % originalCount;
