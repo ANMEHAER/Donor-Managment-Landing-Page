@@ -174,14 +174,17 @@ body {
 
 /* Fix: Ensure mobile menu appears above all sections */
 .mobile-menu {
-    position: fixed; /* Changed from absolute */
-    top: 72px; /* same height as navbar */
+    position: fixed;
+    /* Changed from absolute */
+    top: 72px;
+    /* same height as navbar */
     left: 0;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     padding: 16px 0;
-    z-index: 9999; /* Higher than navbar */
+    z-index: 9999;
+    /* Higher than navbar */
 }
 
 .mobile-menu.active {
@@ -285,7 +288,7 @@ body {
     font-family: 'Cabin';
     font-size: 18px;
     line-height: 27px;
-    color:#000000;
+    color: #000000;
     margin-bottom: 30px;
     /* border: 1px solid black; */
     padding: 0 63px 0 63px;
@@ -749,14 +752,17 @@ body {
             0 4px 6px -2px rgba(0, 0, 0, 0.05);
         cursor: pointer;
     }
-    .section-wrapper {
-    padding: 60px 40px; /* reduced top-bottom and side padding */
-  }
 
-  .section-title {
-    font-size: 2.5rem; /* slightly smaller heading for tablet */
-    margin-bottom: 40px;
-  }
+    .section-wrapper {
+        padding: 60px 40px;
+        /* reduced top-bottom and side padding */
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        /* slightly smaller heading for tablet */
+        margin-bottom: 40px;
+    }
 }
 
 .card-icon-wrapper {
@@ -809,85 +815,100 @@ body {
     margin: 0 auto;
     color: #ECF4E969;
 }
+
 /* ========== Responsive heading for section-title ========== */
 
 /* Large desktops (already handled) — 3.75rem stays */
 
 /* Tablets and smaller laptops */
 @media (max-width: 991px) {
-  .section-title {
-    font-size: 2.5rem;
-    line-height: 1.3;
-    margin-bottom: 40px;
-  }
-   .section-wrapper {
-    padding: 40px 30px; /* reduce top-bottom and horizontal padding */
-  }
+    .section-title {
+        font-size: 2.5rem;
+        line-height: 1.3;
+        margin-bottom: 40px;
+    }
 
-  .section-title {
-    font-size: 3rem; /* slightly smaller for tablets */
-    margin-bottom: 35px;
-  }
+    .section-wrapper {
+        padding: 40px 30px;
+        /* reduce top-bottom and horizontal padding */
+    }
+
+    .section-title {
+        font-size: 3rem;
+        /* slightly smaller for tablets */
+        margin-bottom: 35px;
+    }
 }
 
 /* Large mobile devices */
 @media (max-width: 767px) {
-  .section-title {
-    font-size: 2rem;
-    line-height: 1.25;
-    margin-bottom: 32px;
-    padding: 0 20px; /* Adds some breathing room from screen edges */
-  }
-  .section-wrapper {
-    padding: 40px 20px; /* compact padding for mobile */
-  }
+    .section-title {
+        font-size: 2rem;
+        line-height: 1.25;
+        margin-bottom: 32px;
+        padding: 0 20px;
+        /* Adds some breathing room from screen edges */
+    }
 
-  .section-title {
-    font-size: 1.8rem; /* smaller heading for mobile */
-    margin-bottom: 28px; /* tighter space below heading */
-    line-height: 1.3;
-  }
+    .section-wrapper {
+        padding: 40px 20px;
+        /* compact padding for mobile */
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        /* smaller heading for mobile */
+        margin-bottom: 28px;
+        /* tighter space below heading */
+        line-height: 1.3;
+    }
 }
 
 /* Small mobile devices */
 @media (max-width: 520px) {
-  .section-title {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    margin-bottom: 28px;
-    padding: 0 15px;
-  }
-  .section-wrapper {
-    padding: 32px 16px; /* reduce side space for small devices */
-  }
+    .section-title {
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 28px;
+        padding: 0 15px;
+    }
 
-  .section-title {
-    font-size: 1.5rem; /* smaller text to fit narrow screens */
-    margin-bottom: 24px; /* adjust spacing below title */
-    line-height: 1.3;
-  }
+    .section-wrapper {
+        padding: 32px 16px;
+        /* reduce side space for small devices */
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        /* smaller text to fit narrow screens */
+        margin-bottom: 24px;
+        /* adjust spacing below title */
+        line-height: 1.3;
+    }
 }
 
 /* Extra small devices */
 @media (max-width: 400px) {
-  .section-title {
-    font-size: 1.4rem;
-    line-height: 1.2;
-    margin-bottom: 24px;
-    padding: 0 12px;
-  }
+    .section-title {
+        font-size: 1.4rem;
+        line-height: 1.2;
+        margin-bottom: 24px;
+        padding: 0 12px;
+    }
 }
 
 /* ========== Responsive Padding for Small Devices ========== */
 @media (max-width: 375px) {
-  .section-wrapper {
-    padding: 40px 16px; /* top-bottom: 40px, left-right: 16px */
-  }
+    .section-wrapper {
+        padding: 40px 16px;
+        /* top-bottom: 40px, left-right: 16px */
+    }
 
-  .section-title {
-    font-size: 1.5rem; /* Slightly smaller title for better fit */
-    margin-bottom: 32px;
-  }
+    .section-title {
+        font-size: 1.5rem;
+        /* Slightly smaller title for better fit */
+        margin-bottom: 32px;
+    }
 }
 
 
@@ -1379,474 +1400,443 @@ body {
     }
 }
 
-/* //////////////////////////// */
-/* ===== Base Section ===== */
+/* //////////////////////////////////// */
 .fundraising-section {
     position: relative;
-    height: 672px;
+    width: 100vw; /* ✅ full viewport width */
+    margin-left: calc(50% - 50vw); /* ✅ make background stretch full width */
     background: #FDE6E7;
-    margin: 0 auto;
     overflow: hidden;
-    /* font-family: 'Cabin', sans-serif; */
-    transition: all 0.3s ease-in-out;
+    padding: 80px 60px;
     /* border: 1px solid black; */
 }
 
-/* Center and limit all inner content to 1440px */
 .fundraising-container {
-    position: relative;
-    max-width: 1440px;
-    height: 672px;
+    max-width: 1440px; /* ✅ content stays centered */
     margin: 0 auto;
-    /* overflow: hidden; */
-    /* border: 1px solid black; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
 }
 
-/* ===== Decorative Images ===== */
-.decor-left {
+
+.decor-left,
+.decor-right {
     position: absolute;
-    width: 230px;
-    height: 173px;
     bottom: 0;
+    width: 120px;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.decor-left {
     left: 0;
-    /* border: 1px solid black; */
 }
 
 .decor-right {
-    position: absolute;
-    width: 230px;
-    height: 173px;
-    bottom: 0;
     right: 0;
 }
 
-/* ===== Heading ===== */
+.fundraising-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
 .fundraising-heading {
-    position: absolute;
-    top: 247px;
-    left: 100px;
-    width: 510px;
-    /* height: 112px; */
+    flex: 1;
+    min-width: 320px;
     /* border: 1px solid black; */
-    padding: 10px;
+
 }
 
 .fundraising-heading h1 {
-    /* font-family: 'Circular Std', sans-serif; */
-    font-family: 'CircularStd';
-    font-weight: 700;
     font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -3px;
+    /* line-height: 56px; */
+    font-weight: 700;
     color: #000;
-    transition: all 0.3s ease;
-}
-
-/* ===== Carousel Navigation ===== */
-.fund-carousel-nav {
-    position: absolute;
-    top: 80px;
-    left: 702px;
-    display: flex;
-    gap: 20px;
-}
-
-.fund-nav-btn {
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    opacity: 0.8;
-    transition: 0.3s;
-}
-
-.fund-nav-btn:hover {
-    opacity: 1;
-}
-
-/* ===== Carousel Container ===== */
-.fund-carousel-container {
-    position: absolute;
-    top: 134px;
-    left: 702px;
-    width: 700px;
-    overflow: hidden;
-    /* border: 1px solid black; */
-}
-
-.fund-carousel-track {
-    display: flex;
-    gap: 54px;
-    transition: transform 0.5s ease-in-out;
-    /* border: 1px solid black; */
-}
-
-/* ===== Individual Card ===== */
-.fund-card {
-    flex: 0 0 286px;
-    height: 418px;
-    background: #fff;
-    border-radius: 8px;
-    padding: 30px;
-    box-sizing: border-box;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease-in-out;
-    /* border: 1px solid black; */
-}
-
-.fund-card p {
-    font-size: 16px;
-    line-height: 24px;
-    color: #333;
+    line-height: 1.2;
     margin-bottom: 20px;
-    /* border: 1px solid black; */
-    font-weight: 400;
+    /* letter-spacing: -3%; */
 }
 
-.fund-person-img {
+.carousel-wrapper {
+    flex: 1.2;
+    min-width: 350px;
+    position: relative;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+    /* border: 1px solid black; */
+}
+
+.carousel-controls button {
+    background: transparent;
+    border: none !important;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.carousel-controls button:hover {
+    /* background: #1e1e1e; */
+    /* color: #fff; */
+}
+
+.new-slick-slider {
+    width: 100%;
+}
+
+/* card width is used with variableWidth: true on larger screens */
+.carousel-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px 19px ;
+    width: 285px;
+    height: 419px;
+    /* used for variableWidth layout */
+    /* height: 419px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    transition: transform 0.3s ease;
+    text-align: left;
+    margin: 0 26.5px;
+    /* half of 53px gap to mimic spacing */
+}
+
+.carousel-card:hover {
+    transform: translateY(-5px);
+}
+
+.carousel-card img {
     width: 48px;
     height: 48px;
     border-radius: 50%;
+    margin-top: 30px;
     margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.carousel-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 3px;
+    /* border:  1px solid black; */
+}
+
+.carousel-card p {
+    font-family: 'Cabin';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+    line-height: 1.6;
+    font-weight: 400;
+    flex-grow: 1;
+    /* border:  1px solid black; */
+}
+
+.carousel-card h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
     /* border: 1px solid black; */
 }
 
-.fund-card h4 {
+.carousel-card h3{
+    color: #000;
     font-size: 14px;
     font-weight: 600;
-    margin: 0;
+    line-height: 21px;
 }
 
-.fund-card span {
-    font-size: 13px;
+/* default dot colors */
+.slick-dots {
+    bottom: -35px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: rgb(167, 145, 145);
+    opacity: 0.8;
+    /* border: 1px solid black; */
+}
+
+.slick-dots li.slick-active button:before {
     color: #000;
-}
-/* ===== Carousel Dots ===== */
-.fund-carousel-dots {
-  position: absolute;
-  bottom: 40px;
-  left: 56%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 1;
-  justify-content: center;
-  align-items: center;
+    opacity: 1;
 }
 
-
-
-.fund-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid #000;
-  background-color: transparent;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.fund-dot.active {
-  background-color: #000;
-  transform: scale(1.1);
-}
-
-.fund-card p {
-  margin-bottom: 91px;
-}
-
-.fund-card img{
-    margin-bottom: 12px;
-}
-
-
-
-
-/* ===== Responsive Breakpoints ===== */
-/* 🖥️ Large screens (1200px–1440px) */
-@media (max-width: 1440px) {
-    .fundraising-container { padding: 0 40px; }
-    .fundraising-heading { left: 80px; top: 230px; }
-    .fundraising-heading h1 { font-size: 44px; line-height: 52px; }
-    .fund-carousel-container { left: 650px; width: 650px; }
-    .fund-carousel-track { gap: 44px; }
-}
-
-/* 💻 Tablets (992px–1199px) */
-@media (max-width: 1199px) {
-    .fundraising-section, .fundraising-container { padding-bottom: 80px; }
-    .fundraising-heading { top: 180px; left: 60px; width: 450px; }
-    .fundraising-heading h1 { font-size: 40px; line-height: 48px; }
-    .fund-carousel-nav { top: 70px; left: 580px; gap: 16px; }
-    .fund-carousel-container { top: 120px; left: 580px; width: 550px; }
-    .fund-card { flex: 0 0 250px; padding: 25px; height: 380px; }
-    .fund-card p { font-size: 15px; line-height: 22px; }
-    .decor-left, .decor-right { width: 180px; height: 140px; }
-    
-}
-
-/* 📱 Tablets (768px–991px) */
-@media (max-width: 991px) {
-    .fundraising-container { display: flex; flex-direction: column; align-items: center; text-align: center; height: auto; }
-    .fundraising-heading { position: static; width: 80%; margin-top: 40px; }
-    .fundraising-heading h1 { font-size: 36px; line-height: 44px; letter-spacing: -2px; }
-    .fund-carousel-nav { position: static; justify-content: center; margin: 20px 0; }
-    .fund-carousel-container { position: static; width: 90%; margin: 0 auto; }
-    .fund-carousel-track { gap: 32px; }
-    .fund-card { flex: 0 0 80%; height: auto; padding: 24px; }
-    .fund-card p { font-size: 15px; line-height: 22px; }
-    .decor-left, .decor-right {display: none;}
-    .fund-carousel-dots {
-        bottom: 25px;
-        gap: 8px;
-        left: unset;
-        transform: translateX(-10%);
-    }
-    
-}
-
-/* 📲 Mobile (521px–767px) */
-@media (max-width: 767px) {
-    .fundraising-section { height: auto; padding: 60px 0; }
-    .fundraising-heading { width: 90%; margin-top: 0px; }
-    .fundraising-heading h1 { font-size: 30px; line-height: 38px; letter-spacing: -1px; }
-    .fund-carousel-container { width: 100%; }
-    .fund-carousel-track { gap: 24px; }
-    .fund-card { flex: 0 0 90%; padding: 20px; height: auto; }
-    .fund-card p { font-size: 14px; line-height: 20px; }
-    .fund-card h4 { font-size: 13px; }
-    .fund-card span { font-size: 12px; }
-    .decor-left, .decor-right { width: 120px; height: 90px; opacity: 0.6; }
-}
-
-/* 📱 Small Mobile (<=520px) */
-@media (max-width: 520px) {
-    .fundraising-section { padding: 40px 0; }
-    .fundraising-heading h1 { font-size: 26px; line-height: 32px; }
-    .fund-card { flex: 0 0 95%; padding: 18px; }
-    .fund-card p { font-size: 13px; line-height: 18px; }
-    .fund-person-img { width: 40px; height: 40px; }
-    .decor-left, .decor-right { width: 100px; height: 70px; opacity: 0.4; }
-    .fund-carousel-dots {
-        bottom: 25px;
-        gap: 8px;
-        left: unset;
-        transform: translateX(-10%);
-    }
-}
-/* 📱 Extra Small Devices (below 520px — e.g., 400px and below) */
-@media (max-width: 400px) {
+/* Responsive adjustments */
+@media (max-width: 1400px) {
     .fundraising-section {
-        padding: 30px 0;
-        height: auto;
-    }
-
-    .fundraising-heading {
-        width: 90%;
-        margin: 0 auto 20px auto;
-        text-align: center;
-        padding: 0;
+        padding: 80px 40px;
     }
 
     .fundraising-heading h1 {
-        font-size: 22px;
-        line-height: 28px;
-        letter-spacing: -0.5px;
-    }
-
-    .fund-carousel-container {
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .fund-carousel-track {
-        gap: 16px;
-    }
-
-    .fund-card {
-        flex: 0 0 92%;
-        padding: 15px;
-        height: auto;
-        border-radius: 6px;
-    }
-
-    .fund-card p {
-        font-size: 12px;
-        line-height: 17px;
-    }
-
-    .fund-card h4 {
-        font-size: 12px;
-    }
-
-    .fund-card span {
-        font-size: 11px;
-    }
-
-    .fund-person-img {
-        width: 36px;
-        height: 36px;
-        margin-bottom: 8px;
-    }
-
-    .decor-left,
-    .decor-right {
-        width: 80px;
-        height: 60px;
-        opacity: 0.3;
-    }
-
-    .fund-carousel-dots {
-        bottom: 25px;
-        gap: 8px;
-        left: unset;
-        transform: translateX(-10%);
-    }
-
-    .fund-dot {
-        width: 8px;
-        height: 8px;
+        font-size: 44px;
     }
 }
 
-/* 💻 Tablets (992px–1199px) */
-@media (max-width: 1199px) {
-    .fund-carousel-track {
-        gap: 40px;
+@media (max-width: 1200px) {
+    .fundraising-heading h1 {
+        font-size: 40px;
     }
 
-    .fund-card {
-        flex: 0 0 240px;
+    .fundraising-heading p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 992px) {
+    .fundraising-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .fundraising-heading h1 {
+        font-size: 38px;
+    }
+
+    .fundraising-heading p {
+        max-width: 600px;
+        margin: 0 auto 20px;
+    }
+
+    .carousel-controls {
+        justify-content: center;
+    }
+
+    .carousel-wrapper {
+        width: 90%;
+    }
+
+    .carousel-card {
+        width: 260px;
+        height: 360px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fundraising-section {
+        padding: 40px 20px;
+    }
+
+    .fundraising-heading h1 {
+        font-size: 30px;
+    }
+
+    .fundraising-heading p {
+        font-size: 15px;
+    }
+
+    .carousel-wrapper {
+        width: 100%;
+    }
+
+    .carousel-card {
+        width: 240px;
         height: auto;
-        padding: 22px;
+        padding: 20px;
+    }
+
+    .carousel-card img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* Mobile: force single-slide full width and center */
+@media (max-width: 576px) {
+    .new-slick-slider .slick-list {
+        overflow: hidden !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+    }
+
+    .new-slick-slider .slick-track {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .new-slick-slider .slick-slide {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+    }
+
+    .carousel-card {
+        width: 90% !important;
+        max-width: 320px;
+        margin: 0 auto !important;
+        padding: 25px;
+        height: auto;
+    }
+
+    /* ensure text color readable if card bg is dark */
+    .carousel-card h3,
+    .carousel-card p {
+        color: #000;
+    }
+}
+
+/* Make sure slides are centered and track doesn't overflow in 577-767 range */
+
+@media (min-width: 577px) and (max-width: 767px) {
+    .new-slick-slider .slick-list {
+        overflow: hidden !important;
+        margin: 0 auto !important;
+    }
+
+    .new-slick-slider .slick-track {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .new-slick-slider .slick-slide {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 auto !important;
+    }
+
+    .carousel-card {
+        width: 90% !important;
+        max-width: 350px;
+        margin: 0 auto !important;
+    }
+}
+
+/* =========================
+   Desktop-only layout for arrows + dots
+   ========================= */
+@media (min-width: 1024px) {
+
+    /* Align the whole carousel controls + dots on the left */
+    .carousel-wrapper {
+        position: relative;
+    }
+
+    .fundraising-heading {
+        margin-top: 150px;
+        /* ✅ Only for desktop screens */
+    }
+
+    .carousel-card p {
+    margin-bottom: 91px !important; /* space between paragraph and image */
+  }
+
+  .carousel-card img {
+    margin-bottom: 12px !important; /* space between image and name */
+  }
+    /* Wrap arrows and dots together on the left */
+    .carousel-controls {
+        position: absolute;
+        top: -50px;
+        /* Adjust vertical position */
+        left: 0;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        z-index: 10;
+    }
+
+    /* Make dots appear beside arrows (horizontally) */
+    .slick-dots {
+        position: static;
+        display: flex !important;
+        margin-left: 10px;
+        margin-top: 10px;
+        gap: 8px;
+    }
+
+    .slick-dots li {
         margin: 0;
     }
 
-    .fund-card p {
-        font-size: 15px;
-        line-height: 22px;
-        margin-bottom: 60px;
+    /* Keep dot styling consistent */
+    .slick-dots li button:before {
+        font-size: 10px;
+        color: #000;
+        opacity: 0.6;
     }
 
-    .fund-person-img {
-        margin-bottom: 10px;
-    }
-}
-
-/* 📱 Tablets (768px–991px) */
-@media (max-width: 991px) {
-    .fund-carousel-track {
-        gap: 24px;
+    .slick-dots li.slick-active button:before {
+        color: #000;
+        opacity: 1;
     }
 
-    .fund-card {
-        flex: 0 0 75%;
-        padding: 20px;
-        margin: 0 auto;
-        height: auto;
+    /* Move buttons closer visually */
+    .carousel-controls button {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: transparent;
+        border: 1px solid #ccc;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s ease;
     }
 
-    .fund-card p {
-        font-size: 15px;
-        line-height: 21px;
-        margin-bottom: 40px;
-    }
-
-    .fund-card h4 {
-        font-size: 14px;
-    }
-
-    .fund-card span {
-        font-size: 12px;
+    .carousel-controls button:hover {
+        /* background: #1e1e1e; */
+        /* color: #fff; */
     }
 }
 
-/* 📲 Mobile (521px–767px) */
-@media (max-width: 767px) {
-    .fund-carousel-track {
-        gap: 20px;
+@media (max-width: 992px) and (min-width: 768px) {
+    .carousel-card {
+        height: auto !important;
+        /* allow full content to show */
+        padding: 35px 25px !important;
+        /* less padding for fit */
+        width: 260px !important;
+        /* slightly narrower cards */
     }
 
-    .fund-card {
-        flex: 0 0 85%;
-        padding: 18px;
-        margin: 0 auto;
-        height: auto;
+    .carousel-card p {
+        font-size: 15px !important;
+        line-height: 1.6 !important;
     }
 
-    .fund-card p {
-        font-size: 14px;
-        line-height: 20px;
-        margin-bottom: 30px;
+    .carousel-card img {
+        width: 55px !important;
+        height: 55px !important;
+        margin-top: 25px !important;
     }
 
-    .fund-card h4 {
-        font-size: 13px;
+    .carousel-card h3 {
+        font-size: 15px !important;
     }
 
-    .fund-card span {
-        font-size: 12px;
-    }
-}
-
-/* 📱 Small Mobile (<=520px) */
-@media (max-width: 520px) {
-    .fund-carousel-track {
-        gap: 16px;
-    }
-
-    .fund-card {
-        flex: 0 0 90%;
-        padding: 16px;
-        margin: 0 auto;
-        height: auto;
-    }
-
-    .fund-card p {
-        font-size: 13px;
-        line-height: 18px;
-        margin-bottom: 25px;
-    }
-
-    .fund-card h4 {
-        font-size: 12.5px;
-    }
-
-    .fund-card span {
-        font-size: 11.5px;
+    .carousel-card h4 {
+        font-size: 10px !important;
     }
 }
-
-/* 📱 Extra Small (below 400px) */
-@media (max-width: 400px) {
-    .fund-carousel-track {
-        gap: 12px;
-    }
-
-    .fund-card {
-        flex: 0 0 92%;
-        padding: 14px;
-        margin: 0 auto;
-        height: auto;
-    }
-
-    .fund-card p {
-        font-size: 12px;
-        line-height: 17px;
-        margin-bottom: 20px;
-    }
-
-    .fund-card h4 {
-        font-size: 12px;
-    }
-
-    .fund-card span {
-        font-size: 11px;
-    }
-}
-
-
-
 
 
 /* footer-css */
@@ -1990,12 +1980,13 @@ body {
 }
 
 .new-slick-slider .slick-slide {
-  margin: 0 10px; /* space between slides */
+    margin: 0 10px;
+    /* space between slides */
 }
 
 /* fix slick-track alignment when using margins */
 .new-slick-slider .slick-list {
-  margin: 0 -10px;
+    margin: 0 -10px;
 }
 
 
@@ -2122,61 +2113,69 @@ body {
         /* Ensure list items revert to left alignment */
     }
 }
+
 /* --- Extra padding for footer columns (768px to 300px) --- */
 @media (max-width: 768px) and (min-width: 300px) {
+
     .footer-section .follow-us,
     .footer-section .links-group-1,
     .footer-section .links-group-2,
     .footer-section .links-group-3 {
         padding: 15px;
         background-color: #ffffff;
-        border-radius: 8px; /* optional – gives a softer card feel */
+        border-radius: 8px;
+        /* optional – gives a softer card feel */
     }
 }
+
 /* --- Fix Footer Mobile Spacing (768px to 300px) --- */
 @media (max-width: 768px) {
-  .footer-columns {
-    gap: 0px; 
-  }
+    .footer-columns {
+        gap: 0px;
+    }
 
-  .col {
-    margin-bottom: 10px; /* tighten vertical spacing between sections */
-    padding-bottom: 0; /* remove extra bottom padding */
-  }
+    .col {
+        margin-bottom: 10px;
+        /* tighten vertical spacing between sections */
+        padding-bottom: 0;
+        /* remove extra bottom padding */
+    }
 
-  .footer-section .follow-us,
-  .footer-section .links-group-1,
-  .footer-section .links-group-2,
-  .footer-section .links-group-3 {
-    padding: 10px 12px; /* slightly smaller padding */
-    border-radius: 8px;
-  }
+    .footer-section .follow-us,
+    .footer-section .links-group-1,
+    .footer-section .links-group-2,
+    .footer-section .links-group-3 {
+        padding: 10px 12px;
+        /* slightly smaller padding */
+        border-radius: 8px;
+    }
 
-  .col.open .collapsible-content {
-    padding-bottom: 6px; /* less space when opened */
-  }
+    .col.open .collapsible-content {
+        padding-bottom: 6px;
+        /* less space when opened */
+    }
 
-  .col h4 {
-    margin-bottom: 0;
-  }
+    .col h4 {
+        margin-bottom: 0;
+    }
 }
+
 /* --- Footer Divider Lines & Active State --- */
 @media (max-width: 768px) {
-  /* Add divider line under each column */
-  .footer-section .col {
-    border-bottom: 1px solid #e0e0e0;
-    transition: border-color 0.3s ease;
-  }
 
-  /* Remove bottom border for last column */
-  .footer-section .col:last-child {
-    border-bottom: none;
-  }
+    /* Add divider line under each column */
+    .footer-section .col {
+        border-bottom: 1px solid #e0e0e0;
+        transition: border-color 0.3s ease;
+    }
 
-  /* When a column is open (expanded), hide its divider line */
-  .footer-section .col.open {
-    border-bottom-color: transparent;
-  }
+    /* Remove bottom border for last column */
+    .footer-section .col:last-child {
+        border-bottom: none;
+    }
+
+    /* When a column is open (expanded), hide its divider line */
+    .footer-section .col.open {
+        border-bottom-color: transparent;
+    }
 }
-
-
